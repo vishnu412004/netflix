@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("assets/img/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: max(1000px, 100vw);
+  position: relative;
+}
+
+.main .box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.64;
+  position: absolute;
+  top: 0px;
+  background-color: black;
+}
+
+nav {
+  display: flex;
+  max-width: 80vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 71px;
+}
+
+nav img {
+  width: 140px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.para {
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  gap: 10px;
+  font-family: "Martel Sans", serif;
+  padding: 0px 30px;
+}
+
+.para .text {
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.para :nth-child(3) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.para :nth-child(4) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.para .gap {
+  padding: 22px 12px 0px 3px;
+  font-size: 17px;
+}
+
+.seperation {
+  height: 7px;
+  background-color: rgb(54, 53, 53);
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  padding: 6px 13px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(23, 23, 23, 0.7);
+  color: white;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  font-weight: 400;
+}
+
+.btn-eng {
+  padding: 3px 52px 6px 26px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  border: 1px solid rgb(247, 243, 243, 0.5);
+}
+
+.main input {
+  padding: 19px 153px 16px 10px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  ;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgb(247, 243, 243, 0.5);
+}
+
+
+.para .para-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.first {
+  display: flex;
+  max-width: 93vw;
+  margin: auto;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width:905px) {
+  .first {
+    flex-wrap: wrap;
+  }
+}
+
+.secimg {
+  position: relative;
+
+}
+
+.secimg img {
+  width: 555px;
+  position: relative;
+  z-index: 10;
+}
+
+.secimg video {
+  position: absolute;
+  width: 555px;
+  top: 30px;
+  right: 0px;
+}
+
+.first>div :nth-child(1) {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.first>div :nth-child(2) {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.first>div {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 0px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-weight: 500;
+  ;
+}
+
+.faq {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", serif;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: rgb(83, 81, 81);
+}
+
+.faqbox svg {
+  filter: invert();
+}
+
+.faqbox {
+  display: flex;
+  transition: all 1s ease-out;
+  color: white;
+  background-color: rgb(44, 42, 42);
+  padding: 24px;
+  max-width: 60vw;
+  margin: 20px auto;
+  justify-content: space-between;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  max-width: 70vw;
+  margin: auto;
+  padding: 34px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+@media screen and (max-width:1000px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .secimg img {
+    width: 355px;
+  }
+
+  .secimg video {
+    width: 355px;
+  }
+
+  .main {
+    height: 100%;
+  }
+
+  .main .box {
+    height: 100%;
+  }
+  .para .text {
+    font-size: 32px;
+  }
+  .para :nth-child(3) {
+    font-size: 18px;
+    
+  }
+  
+  .para :nth-child(4) {
+    font-size: 18px;
+  }
+  .para .para-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.footer a {
+  color: white;
+  font-size: 14px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
